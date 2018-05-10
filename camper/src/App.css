@@ -1,0 +1,20 @@
+body {
+  padding: 0.5% 3%;
+}
+a {
+  padding: 10px;
+  margin-top: 50%;
+}
+.color {
+  color: darkgreen;
+}
+.imageHeight {
+  height: 60px;
+  float: left;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+#logo {
+  width: 40px;
+  height: 40px;;
+}
