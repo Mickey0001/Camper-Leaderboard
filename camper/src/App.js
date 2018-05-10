@@ -41,13 +41,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="text-center color"><img src={logo} id="logo" alt="Free Code Camp Logo"/> Free Code Camp <br/> Camper Leaderboard</h1>
+        <p className="text-center color">Toggle between Best in the Last 30 days and Best of All Time.</p>
         <Table striped bordered condensed hover className="color">
         <thead>
           <tr>
             <th>Place</th>
             <th>Camper's name</th>
-            <th onClick={(event)=> this.viewChange(true)}>Last 30 days {current && (<i className="fa fa-caret-down"></i>)}</th>
-            <th onClick={(event)=> this.viewChange(false)}>Best of all time {current === false && (<i className="fa fa-caret-down"></i>)}</th>
+            <th onClick={(event)=> this.viewChange(true)}>Last 30 days {current && (<i className="fa fa-check"></i>)}</th>
+            <th onClick={(event)=> this.viewChange(false)}>Best of all time {current === false && (<i className="fa fa-check"></i>)}</th>
           </tr>
         </thead>
         <tbody>
