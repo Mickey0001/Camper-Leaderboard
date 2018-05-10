@@ -18,10 +18,8 @@ class App extends Component {
 
 
  getFCCdata(url, stateName) {
-  console.log(1);
    axios.get(url).then(({data}) => {
      this.setState({[stateName]: data} );
-     console.log(this.state.top100Days);
    })
  }
 
